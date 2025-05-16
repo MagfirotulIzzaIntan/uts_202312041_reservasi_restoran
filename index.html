@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Restoran</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Reservasi</h1>
+        <form action="proses_reservasi.php" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal Reservasi:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group">
+                <label for="waktu">Waktu Reservasi:</label>
+                <input type="time" id="waktu" name="waktu" required>
+            </div>
+            <div class="form-group">
+                <label for="jumlah_orang">Jumlah Orang:</label>
+                <input type="number" id="jumlah_orang" name="jumlah_orang" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="catatan">Catatan Tambahan (Opsional):</label>
+                <textarea id="catatan" name="catatan"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Reservasi Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
